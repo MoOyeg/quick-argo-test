@@ -11,3 +11,5 @@ spec:
     path: operator
   destination:
     server: https://kubernetes.default.svc
+  syncPolicy:
+  automated: {}

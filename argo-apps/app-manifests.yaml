@@ -11,3 +11,5 @@ spec:
     path: manifests
   destination:
     server: https://kubernetes.default.svc
+  syncPolicy:
+    automated: {}
