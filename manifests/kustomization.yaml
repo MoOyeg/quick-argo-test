@@ -3,5 +3,6 @@ kind: Kustomization
 resources:
   - 13-gpu-clusterpolicy.yaml
   - 14-datasciencecluster.yaml
+  - 13-nfd.yaml
   # - 15-dsciinitialization.yaml
   # - 16-odh-dashboard-config.yaml
