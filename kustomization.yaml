@@ -1,20 +1,20 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-  - 00-nvidia-gpu-operator-project.yaml
-  - 01-nvidia-gpu-operator-group.yaml
-  - 02-nvidia-gpu-operator-sub.yaml
-  - 03-gpu-clusterpolicy.yaml
-  - 00-redhat-ods-operator-namespace.yaml
-  - 01-redhat-ods-operator-group.yaml
-  - 02-redhat-ods-operator-sub.yaml
-  - 03-redhat-ods-applications-namespace.yaml
-  - 00-servicemesh-project.yaml
-  - 01-servicemesh-operator-group.yaml
-  - 02-servicemesh-operator-sub.yaml
-  - 04-datasciencecluster.yaml
-  - 05-dsciinitialization.yaml
-  - 06-odh-dashboard-config.yaml
-  - 00-nfd-project.yaml
-  - 01-nfd-operator-group.yaml
-  - 02-nfd-sub.yaml
+  - 10-nfd-project.yaml
+  - 10-nvidia-gpu-operator-project.yaml
+  - 10-redhat-ods-operator-namespace.yaml
+  - 10-servicemesh-project.yaml
+  - 11-nfd-operator-group.yaml
+  - 11-nvidia-gpu-operator-group.yaml
+  - 11-redhat-ods-applications-namespace.yaml
+  - 11-redhat-ods-operator-group.yaml
+  - 11-servicemesh-operator-group.yaml
+  - 12-nfd-sub.yaml
+  - 12-nvidia-gpu-operator-sub.yaml
+  - 12-redhat-ods-operator-sub.yaml
+  - 12-servicemesh-operator-sub.yaml
+  - 13-gpu-clusterpolicy.yaml
+  - 14-datasciencecluster.yaml
+  - 15-dsciinitialization.yaml
+  - 16-odh-dashboard-config.yaml
