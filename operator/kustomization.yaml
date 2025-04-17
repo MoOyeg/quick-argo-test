@@ -17,3 +17,4 @@ resources:
   - 12-redhat-ods-operator-sub.yaml
   - 12-servicemesh-operator-sub.yaml
   - 12-serverless-sub.yaml
+  - 12-authorino-sub.yaml
