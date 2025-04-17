@@ -1,4 +1,4 @@
 resources:
 - app-project-namespace.yaml
-- app-operator-group.yaml
+- app-operator.yaml
 - app-manifests.yaml
