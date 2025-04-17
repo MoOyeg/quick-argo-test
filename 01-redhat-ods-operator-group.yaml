@@ -1,0 +1,11 @@
+apiVersion: operators.coreos.com/v1
+kind: OperatorGroup
+metadata:
+  annotations:
+    argocd.argoproj.io/sync-wave: "8"
+  name: redhat-ods-operator-gxnx4
+  namespace: redhat-ods-operator
+spec:
+  targetNamespaces:
+    - redhat-ods-operator
+  upgradeStrategy: Default

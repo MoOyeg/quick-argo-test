@@ -1,0 +1,6 @@
+apiVersion: opendatahub.io/v1alpha
+kind: OdhDashboardConfig
+metadata:
+  annotations:
+    argocd.argoproj.io/sync-wave: "16"
+  name: odh-dashboard-config

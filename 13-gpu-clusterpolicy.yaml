@@ -1,0 +1,7 @@
+apiVersion: nvidia.com/v1
+kind: ClusterPolicy
+metadata:
+  annotations:
+    argocd.argoproj.io/sync-wave: "3"
+  name: gpu-cluster-policy
+spec: {}
