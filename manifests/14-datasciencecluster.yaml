@@ -1,32 +1,46 @@
 apiVersion: datasciencecluster.opendatahub.io/v1
 kind: DataScienceCluster
 metadata:
+  name: default-dsc
   annotations:
     argocd.argoproj.io/sync-wave: "5"
-  name: default
+  labels:
+    app.kubernetes.io/name: datasciencecluster
+    app.kubernetes.io/instance: default-dsc
+    app.kubernetes.io/part-of: rhods-operator
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: rhods-operator
 spec:
   components:
     codeflare:
-      managementState: Removed
+      managementState: Managed
     kserve:
-      managementState: Removed
+      nim:
+        managementState: Managed
+      rawDeploymentServiceConfig: Headless
       serving:
         ingressGateway:
           certificate:
-            type: SelfSigned
+            type: OpenshiftDefaultIngress
         managementState: Managed
         name: knative-serving
+      managementState: Managed
+    modelregistry:
+      registriesNamespace: rhoai-model-registries
+      managementState: Removed
     trustyai:
-      managementState: Removed
+      managementState: Managed
     ray:
-      managementState: Removed
+      managementState: Managed
     kueue:
-      managementState: Removed
+      managementState: Managed
     workbenches:
-      managementState: Removed
+      managementState: Managed
     dashboard:
       managementState: Managed
     modelmeshserving:
-      managementState: Removed
+      managementState: Managed
     datasciencepipelines:
-      managementState: Removed
+      managementState: Managed
+    trainingoperator:
+      managementState: Managed

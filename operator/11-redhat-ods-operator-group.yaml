@@ -3,9 +3,8 @@ kind: OperatorGroup
 metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "1"
+  generateName: redhat-ods-operator-
   name: redhat-ods-operator
   namespace: redhat-ods-operator
 spec:
-  targetNamespaces:
-    - redhat-ods-operator
   upgradeStrategy: Default

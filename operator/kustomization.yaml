@@ -5,12 +5,15 @@ resources:
   - 10-nvidia-gpu-operator-project.yaml
   - 10-redhat-ods-operator-namespace.yaml
   - 10-servicemesh-project.yaml
+  - 10-openshift-serverless-project.yaml
   - 11-nfd-operator-group.yaml
   - 11-nvidia-gpu-operator-group.yaml
   - 11-redhat-ods-applications-namespace.yaml
   - 11-redhat-ods-operator-group.yaml
   - 11-servicemesh-operator-group.yaml
+  - 11-redhat-serverless-operator-group.yaml
   - 12-nfd-sub.yaml
   - 12-nvidia-gpu-operator-sub.yaml
   - 12-redhat-ods-operator-sub.yaml
   - 12-servicemesh-operator-sub.yaml
+  - 12-serverless-sub.yaml
